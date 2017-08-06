@@ -1,6 +1,8 @@
 body {
     background: yellow;
 }
+
+
 /*
 img {
     height: 300px;
@@ -10,11 +12,15 @@ img {
 }
 */
 
+
 /*obrót*/
+
 
 /*.rotate img {
     /* transform: rotate(20deg);*/
-  /*  animation: rotating 2s infinite linear;
+
+
+/*  animation: rotating 2s infinite linear;
 }
 
 @keyframes rotating {
@@ -27,7 +33,10 @@ img {
 }
 */
 
+
 /*przesunięcie*/
+
+
 /*
 .translate img {
     transform: translate(200px, 100px);
@@ -37,6 +46,8 @@ img {
     transform: scale(0.2);
 }
 */
+
+
 /*.animation img {
     animation-name: resize;
     animation-duration: 3s;
@@ -58,21 +69,34 @@ img {
 img {
     height: 100px;
     margin-bottom: 300px;
-    transition: all 3s;
+    transition: all 2.5s;
     transform-origin: 0% 0%;
 }
+
 .animation img {
     animation-name: beat;
-    animation-duration: 1s; 
-        animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
-    
-    
 }
-
 
 @keyframes beat {
-    to {transform: scale(1.4);}
+    0% {
+        transform: scale( 1);
+    }
+    20% {
+        transform: scale( 1.3);
+    }
+    40% {
+        transform: scale( 1);
+    }
+    60% {
+        transform: scale( 1.3);
+    }
+    80% {
+        transform: scale( 1);
+    }
+    100% {
+        transform: scale( 1.3);
+    }
 }
-
-  
